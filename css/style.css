@@ -130,6 +130,7 @@ aside .add-playlist i{
   padding: 7px;
 }
 
+/* logo principale */
 aside .logo.desktop{
   margin: 10px 10px;
 }
@@ -139,6 +140,7 @@ aside .logo.desktop img{
 
 }
 
+/* icon categorie */
 aside .icon-cat,.col{
   margin: 10px 15px;
 }
@@ -155,6 +157,7 @@ aside .icon-cat span{
   font-size: 0.7rem;
   padding: 5px;
 }
+/* /icon categorie */
 
 aside .col .name-playlist,.add-playlist,li{
   margin-bottom: 10px;
@@ -164,6 +167,7 @@ aside .col h3{
   margin: 20px auto;
 }
 
+/* playlist */
 aside .col .add-playlist span{
   font-size: 1rem;
   margin: 10px 5px;
@@ -188,8 +192,9 @@ aside .name-playlist ul li a{
   font-weight: bold;
   color: #75777C;
 }
+/* /playlist */
 
-
+/* account */
 .download-ico img {
   width: 10%;
   margin-right: 10px;
@@ -219,12 +224,7 @@ aside .profile h3 {
   font-size: 0.8rem;
   margin: 5px 15px;
 }
-
-
-
-
-
-
+/* /account */
 /* /Aside  */
 
 /* MAIN  */
@@ -302,7 +302,7 @@ main .row{
 
 main .row .col{
   width: calc(100% / 6);
-  padding: 5px 15px 5px 0;
+  padding: 5px 10px 5px 0;
 }
 
 section{
@@ -312,15 +312,106 @@ section{
 section h2,p{
   margin-bottom: 10px;
 }
-/* FOOTER  */
+/* Footer */
 
 footer{
+  justify-content: space-between;
   height: 100px;
   width: 100%;
   background-color: #1F1F1F;
+  padding: 10px;
+  flex-shrink: 1;
 }
 
+footer .bar{
+  height: 4px;
+  border-radius: 4px;
+  background-color: #75777C;
+}
 
+/* Left Block  */
+
+footer .left{
+  width: 30vw;
+}
+
+footer .left *{
+  margin-left: 5px;
+}
+
+footer .left .image{
+  width: 50px;
+  height: 50px;
+}
+
+footer .left .image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+footer .left .title{
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .left .title span{
+  color: #75777C;
+  font-size: 0.6rem;
+  margin-top: 3px;
+}
+
+footer .left i{
+  margin-left: 25px;
+  color: #75777C;
+}
+/* /Left Block  */
+
+/* Center Block  */
+
+footer .center{
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  flex-shrink: 1;
+}
+
+footer .center .icons{
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer .center .icons i{
+  margin: 0 15px;
+}
+
+footer .center .icons i:nth-child(3){
+  font-size: 1.8rem;
+}
+
+footer .center .duration .time{
+  font-size: 0.7rem;
+}
+
+footer .center .duration .bar{
+  width: 25vw;
+  margin: 0 10px;
+}
+/* /Center Block  */
+
+/* Right Block  */
+
+footer .right{
+  width: 30vw;
+}
+
+footer .right i{
+  margin-right: 10px;
+}
+
+footer .right .bar{
+  width: 10vw;
+}
+/* /Right Block  */
 
 
 
@@ -385,6 +476,14 @@ footer{
 
   footer .media-player .col{
     flex-shrink: 0;
+  }
+
+  footer .center .icons i:nth-child(3){
+    font-size: 1.7rem;
+  }
+
+  footer .center .icons i{
+    font-size: 0.8rem;
   }
 
   .desktop{

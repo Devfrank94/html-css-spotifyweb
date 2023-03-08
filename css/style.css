@@ -156,8 +156,12 @@ aside .icon-cat span{
   padding: 5px;
 }
 
-aside .col h3,.name-playlist,.add-playlist,li{
+aside .col .name-playlist,.add-playlist,li{
   margin-bottom: 10px;
+}
+
+aside .col h3{
+  margin: 20px auto;
 }
 
 aside .col .add-playlist span{
@@ -170,7 +174,7 @@ aside span,li{
 }
 
 aside .name-playlist{
-  height: calc(100vh - 400px);
+  height: calc(100vh - 490px);
   overflow-y: auto;
 }
 
@@ -215,6 +219,8 @@ aside .profile h3 {
   font-size: 0.8rem;
   margin: 5px 15px;
 }
+
+
 
 
 
@@ -357,7 +363,20 @@ footer{
 
   aside .icon-cat img{
     width: 30px;
+    margin: 10px 20px;
   }
+
+  aside .account.mobile{
+    width: 45%;
+    position: fixed;
+    left: 0;
+    bottom: 100px;
+  }
+
+  aside .account.mobile img{
+    margin-bottom: 5px;
+  }
+
 
   main{
     margin-left: 50px;

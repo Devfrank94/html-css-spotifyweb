@@ -109,9 +109,6 @@ header{
   font-size: .7rem;
 }
 
-
-
-
 /* Aside  */
 
 aside{
@@ -141,13 +138,26 @@ aside .logo.desktop img{
 }
 
 /* icon categorie */
-aside .icon-cat,.col{
+aside .col{
   margin: 10px 15px;
   cursor: pointer;
 }
 
 aside .home,.search,.library{
   margin-bottom: 5px;
+}
+
+aside .search,.library{
+  margin-left: 15px;
+}
+
+aside .icon-cat.desktop .home.active{
+  border-left: 3px solid #7DB72A;
+  padding-left: 12px;
+}
+
+aside .home.active span{
+  color: white;
 }
 
 aside .icon-cat img{
@@ -495,6 +505,10 @@ footer .right .bar{
   aside .icon-cat img{
     width: 30px;
     margin: 10px 20px;
+  }
+
+  aside .search,.library{
+    margin-left: 0;
   }
 
   aside .account.mobile{

@@ -143,6 +143,7 @@ aside .logo.desktop img{
 /* icon categorie */
 aside .icon-cat,.col{
   margin: 10px 15px;
+  cursor: pointer;
 }
 
 aside .home,.search,.library{
@@ -253,7 +254,7 @@ main .navbar ul {
 
 main .navbar ul li {
   display: inline-block;
-  margin: 5px  10px;
+  margin: 7px  10px;
 }
 
 main .navbar ul li:hover {
@@ -281,6 +282,7 @@ section .col .cover{
 
 .cover:hover .overlayer {
 	visibility: visible;
+  cursor: pointer;
 }
 
 .cover .overlayer {
@@ -296,7 +298,7 @@ section .col .cover{
 
 .overlayer .fa-play-circle {
 	color: #fff;
-	font-size: 40px;
+	font-size: 30px;
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -304,7 +306,7 @@ section .col .cover{
 	transition: 100ms ease;
 }
 .fa-play-circle:hover {
-	font-size: 60px;
+	font-size: 50px;
 }
 /* /Animazione hover card */
 
@@ -349,6 +351,10 @@ section h2,p{
 /* Footer */
 
 footer{
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
   justify-content: space-between;
   height: 100px;
   width: 100%;

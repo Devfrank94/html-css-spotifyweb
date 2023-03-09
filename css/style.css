@@ -267,8 +267,18 @@ main .navbar ul li {
   margin: 7px  10px;
 }
 
-main .navbar ul li:hover {
+main nav ul li a:hover {
+  color: white;
+}
+
+main nav ul li.active:hover ::after{
+  content: '';
   border-bottom: 2px solid #7DB72A;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-bottom: -4px;
+  display: block;
 }
 
 main .navbar ul li a{

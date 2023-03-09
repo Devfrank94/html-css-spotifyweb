@@ -452,10 +452,44 @@ footer .center .duration .time{
   font-size: 0.7rem;
 }
 
-footer .center .duration .bar{
+footer .bar{
+  position: relative;
   width: 25vw;
   margin: 0 10px;
+  cursor: pointer;
 }
+
+/* Green bar Hover */
+footer .bar .greenbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7vw;
+  height: 100%;
+  border-radius: 4px;
+}
+
+footer .bar .circle{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: -3px;
+  left: 7vw;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+footer .bar:hover .greenbar{
+  background-color: #7DB72A;
+}
+
+footer .bar:hover .circle{
+  display: block;
+}
+/* /Green bar Hover */
+
+
 /* /Center Block  */
 
 /* Right Block  */
